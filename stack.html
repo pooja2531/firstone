@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stack = [];
+   let currentSize = stack.length;
+   let maxSize = 7;
+
+
+function pushed(newVal){
+    if (currentSize>=maxSize) {
+        alert("queue is full"  );
+        
+    } else {
+        stack[currentSize] = newVal;
+        currentSize++     
+    }
+    
+}
+function display(){
+      console.log(stack);
+}
+function popped(){
+ if(maxSize > 0){
+   stack.pop();
+   currentSize--
+   
+
+ }
+
+
+}
+pushed(6)
+pushed(3)
+pushed(9)
+display();
+
+    </script>
+</body>
+</html>
