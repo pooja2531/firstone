@@ -13,7 +13,7 @@
    let maxSize = 7;
 
 
-function enqueue(newVal){
+function enqueue1(newVal){
     if (currentSize>=maxSize) {
         alert("queue is full"  );
         
@@ -21,8 +21,7 @@ function enqueue(newVal){
         queue[currentSize] = newVal;
         currentSize++     
     }
-    
-}
+    }
 function display(){
       console.log(queue);
 }
@@ -41,9 +40,9 @@ function dequeue(){
     }
 
 }
- enqueue(10);
- enqueue(20);
- enqueue(30);
+ enqueue1(10);
+ enqueue1(20);
+ enqueue1(30);
  display();
     </script>
 </body>
